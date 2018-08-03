@@ -284,6 +284,7 @@ main(int argc, char **argv)
 					"VIA : Viacoin : V\n"
 					"VIPS : VIPSTARCOIN : V\n"
 					"VPN : Vpncoin : V\n"
+					"VRC/VRM : Vericoin & Verium : V\n"
 					"VTC : Vertcoin : V\n"
 					"WDC : Worldcoin Global : W\n"
 					"WKC : Wankcoin : 1\n"
@@ -1202,6 +1203,15 @@ main(int argc, char **argv)
 					addrtype = 45;
 					privtype = 128;
 					break;		
+			}
+			else
+			if (strcmp(optarg, "VRC")== 0 
+			    || strcmp(optarg, "VRM")== 0) {
+				fprintf(stderr,
+					"Generating VRC/VRM Address\n");
+					addrtype = 70;
+					privtype = 128;
+					break;
 			}
 			break;
 
