@@ -1124,7 +1124,7 @@ main(int argc, char **argv)
 				fprintf(stderr,
 					"Generating VRC/VRM Address\n");
 					addrtype_opt = 70;
-					privtype_opt = 128;
+					privtype_opt = 198;
 					break;
 			}
 			break;
